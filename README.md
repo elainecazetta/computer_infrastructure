@@ -43,7 +43,7 @@ Or, if you’re running locally, start Jupyter Notebook with:
    ```bash
    jupyter notebook
    ```
-Then open problems.ipynb from the Jupyter dashboard.
+Then open **`problems.ipynb`** from the Jupyter dashboard.
 
 3. **Run the notebook cells**
 Run the notebook cells in order to see the outputs for each problem.
