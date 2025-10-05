@@ -14,9 +14,21 @@ The Computer Infrastructure module covers:
 The course materials, lectures, and assessments are maintained in the lecturer’s repository:  
 [Computer Infrastructure (Ian McLoughlin)](https://github.com/ianmcloughlin/computer-infrastructure).
 
-## About This Repository
+## About the Assessments & Problems
 
+This repository includes a set of hands-on problems, provided by our lecturer, that help you learn how software infrastructure and automation work in practice. The original problem descriptions are [available here](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md).
+Each task uses **Python** and **GitHub** to collect, process, visualize, and automate financial data for the five **FAANG** companies — Facebook, Apple, Amazon, Netflix, and Google.
 
+Here’s a summary of the assessment problems:
+
+| Problem | Summary |
+|----------|----------|
+| **Problem 1 – Data from yfinance** | Create a function `get_data()` that uses the **yfinance** Python library to download hourly stock data for the past 5 days for the five FAANG companies. Save the data as a timestamped CSV file inside a new `data/` folder. |
+| **Problem 2 – Plotting Data** | Write a function `plot_data()` that opens the most recent data file, plots the **Close** prices for all five stocks on one chart, and includes axis labels, a legend, and the date as the title. Save the figure in a `plots/` folder using a similar timestamped filename. |
+| **Problem 3 – Script** | Combine the previous two functions into a script named `faang.py` that can be run directly from the terminal. The script should automatically fetch the data and create the plot. |
+| **Problem 4 – Automation** | Automate everything by creating a **GitHub Actions** workflow (`faang.yml`) inside `.github/workflows/`. The workflow should run the script automatically every **Saturday morning**. |
+
+Each problem is implemented and explained in the **`problems.ipynb`** notebook, where outputs and reasoning are documented.
 
 ## Tools & Libraries Used
 
