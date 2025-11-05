@@ -43,25 +43,35 @@ To complete these tasks, I used the following tools and libraries:
 
 ## How to Run the Code  
 
-All problems for this module are completed inside a single Jupyter Notebook called **`problems.ipynb`**. 
-
-To open and run it: 
+Follow the steps below to set up and run this project:  
 
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/elainecazetta/computer_infrastructure.git
    cd computer_infrastructure
    ```  
-2. **Launch Jupyter Notebook**
-If you’re using GitHub Codespaces, simply open problems.ipynb from the file explorer.
-Or, if you’re running locally, start Jupyter Notebook with:  
-   ```bash
-   jupyter notebook
-   ```
-Then open **`problems.ipynb`** from the Jupyter dashboard.
 
-3. **Run the notebook cells**
-Run the notebook cells in order to see the outputs for each problem.
-Each problem is clearly labeled (e.g., Problem 1, Problem 2, etc.) within the notebook.
+2. **Install dependencies**
+Make sure you have Python 3 installed. Then, install the required libraries using:    
+   ```bash
+   pip install -r requirements.txt
+   ```
+(If you’re using GitHub Codespaces, dependencies are pre-installed automatically.)  
+
+3. **Open the Jupyter Notebook**
+- In GitHub Codespaces: Open `problems.ipynb` directly from the file explorer.  
+- On your local machine: Start Jupyter Notebook by running:  
+```bash
+   jupyter notebook
+```
+Then open `problems.ipynb` from the Jupyter dashboard.  
+
+4. **Run the notebook cells in order**  
+Each problem (1–4) is clearly labeled. Running all cells sequentially will:  
+
+- Download the FAANG stock data (Problem 1)  
+- Generate and save plots (Problem 2)  
+- Execute the combined script logic (Problem 3)  
+- Trigger the GitHub Actions automation (Problem 4)  
 
 ## End
