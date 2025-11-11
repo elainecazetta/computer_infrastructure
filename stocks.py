@@ -18,3 +18,6 @@ filename = "data/" + now.strftime("%Y%m%d-%H%M%S") + ".csv"
 # Save data as CSV
 # Resources: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
 df.to_csv(filename)
+
+# Plotting the closing prices for all stocks
+df['Close'].plot()
