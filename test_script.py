@@ -22,10 +22,7 @@ def plot_data():
     print(f"Using latest file: {full_path}")
 
     # Read the CSV with multi-level columns
-    df = pd.read_csv(full_path, header=[0, 1], index_col=0)
-
-    # Convert index to datetime
-    df.index = pd.to_datetime(df.index)
+    df = pd.read_csv(full_path, header=[0, 1], index_col=0, parse_dates=True)
 
     # Select only Close prices
     close_df = df["Close"]
