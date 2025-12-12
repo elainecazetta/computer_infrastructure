@@ -1,0 +1,41 @@
+name: Run faang.py and push changes
+# Ref: https://chatgpt.com/s/t_693c88dd78f08191a002f98fc408486a
+
+on:
+  workflow_dispatch:       # Allows manual trigger
+  schedule:
+    # Ref: https://crontab.guru/#13_01_*_*_6
+    - cron: "13 01 * * 6"   # Runs every Saturday at 13:10 UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # Allows pushing using GITHUB_TOKEN
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run faang.py
+        run: python faang.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add -A
+          git commit -m "Automated update from faang.py" || echo "No changes to commit"
+
+      - name: Push changes
+        run: git push
+
