@@ -5,7 +5,10 @@ on:
   workflow_dispatch:       # Allows manual trigger
   schedule:
     # Ref: https://crontab.guru/#13_01_*_*_6
-    - cron: "13 01 * * 6"   # Runs every Saturday at 13:10 UTC
+    - cron: "13 01 * * 6"   # Runs every Saturday at 01:13 UTC
+
+permissions:
+  contents: write   # Allows pushing changes to the repository
 
 jobs:
   run-script:
