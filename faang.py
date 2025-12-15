@@ -10,6 +10,8 @@ def get_data():
     # References: 
     # https://www.w3schools.com/python/python_functions.asp
     # https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+    # https://www.w3schools.com/python/python_functions.asp
+    # https://www.geeksforgeeks.org/python/python-def-keyword/
     # OpenAI
     """
     Downloads hourly stock data for the previous five days 
