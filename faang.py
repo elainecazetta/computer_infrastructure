@@ -48,6 +48,12 @@ def get_data():
     # -------------------------
 
 def plot_data():
+    # References:
+    # https://matplotlib.org/stable/gallery/index.html
+    # https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+    # https://docs.python.org/3/library/os.html
+    # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.html
+    # OpenAI
     """
     Opens the latest CSV file in the 'data' folder, plots the 
     closing prices of the FAANG companies, and saves the plot 
