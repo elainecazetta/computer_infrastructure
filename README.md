@@ -20,7 +20,7 @@ The course materials, lectures, and assessments are maintained in the lecturer�
 ## About the Assessments & Problems
 
 This repository includes a set of hands-on problems, provided by our lecturer, that help you learn how software infrastructure and automation work in practice. The original problem descriptions are [available here](https://github.com/ianmcloughlin/computer-infrastructure/blob/main/assessment/problems.md).
-Each task uses **Python** and **GitHub** to collect, process, visualize, and automate financial data for the five **FAANG** companies — Facebook, Apple, Amazon, Netflix, and Google.
+Each task uses **Python** and **GitHub** to collect, process, visualize, and automate financial data for the five **FAANG** companies — Facebook(Meta), Apple, Amazon, Netflix, and Google.
 
 Here’s a summary of the assessment problems:
 
@@ -31,7 +31,7 @@ Here’s a summary of the assessment problems:
 | **Problem 3 – Script** | Combine the previous two functions into a script named `faang.py` that can be run directly from the terminal. The script should automatically fetch the data and create the plot. |
 | **Problem 4 – Automation** | Automate everything by creating a **GitHub Actions** workflow (`faang.yml`) inside `.github/workflows/`. The workflow should run the script automatically every **Saturday morning**. |
 
-Each problem is implemented and explained in the **`problems.ipynb`** notebook, where outputs and reasoning are documented.
+Each problem is implemented and explained in the [**`problems.ipynb`** notebook](https://github.com/elainecazetta/computer_infrastructure/blob/main/problems.ipynb), where outputs and reasoning are documented.
 
 ## Tools & Libraries Used
 
@@ -39,7 +39,11 @@ To complete these tasks, I used the following tools and libraries:
 
 - **Python**: The programming language used for all tasks. Download it [here](https://www.python.org/downloads/).  
 - **Jupyter Notebook**: A web-based environment for running Python code. Learn more [here](https://jupyter.org/).  
-- **Pandas**: A library for data manipulation and analysis. Documentation [here](https://pandas.pydata.org/docs/).
+- **Pandas**: A library for data manipulation and analysis. Documentation [here](https://pandas.pydata.org/docs/). 
+- **yfinance:** Used to retrieve historical financial data from Yahoo Finance. Documentation [here](https://pypi.org/project/yfinance/)    
+- **datetime:** Used for handling dates and time ranges. Documentation [here](https://docs.python.org/3/library/datetime.html)  
+- **Matplotlib:** For creating visualizations. Documentation [here](https://matplotlib.org/stable/index.html)  
+- **OS:** Standard libraries for handling file paths and system operations. Documentation [here](https://docs.python.org/3/library/os.html)  
 
 ## How to Run the Code  
 
